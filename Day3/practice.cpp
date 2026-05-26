@@ -1,16 +1,10 @@
-// do while example 
+// print numbers 1 to 100
 #include <iostream>
 using namespace std;
-
 int main() {
-
-    int i = 1;
-
-    do {
-        cout << i << endl;
-        i++;
+    for (int i = 1; i <= 100; i++) {
+        cout << i << " ";
     }
-    while(i <= 5);
-
+    cout << endl;
     return 0;
 }
