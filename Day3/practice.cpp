@@ -106,3 +106,18 @@ int main() {
     }
     return 0;
 }
+
+//Factorial of a number
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    int factorial = 1;
+    cout << "Enter a number: ";
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        factorial *= i; // Multiply factorial by i
+    }
+    cout << "Factorial of " << n << " is: " << factorial << endl;
+    return 0;
+}
