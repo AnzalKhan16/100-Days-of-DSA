@@ -69,8 +69,33 @@ int factorial(int n){
     for (int i = 1; i <= n; i++) {
         fact *= i; // Multiply fact by i
     }
-    int main(){
-        cout << "Factorial of 5 is: " << factorial(5) << endl;
-        return 0;
+    return fact;
+}
+int main() {
+    cout << "Factorial of 5 is: " << factorial(5) << endl;
+    return 0;
+}
+
+//Palindrome number using function
+#include <iostream>
+using namespace std;
+bool isPalindrome(int n) {
+    int original = n; // Store the original number
+    int reversed = 0;
+
+    while (n != 0) {
+        int digit = n % 10; // Get the last digit
+        reversed = reversed * 10 + digit; // Append the digit to the reversed number
+        n /= 10; // Remove the last digit
     }
+
+    return original == reversed; // Check if original and reversed are the same
+}
+int main() {
+    if (isPalindrome(121)) {
+        cout << "121 is a palindrome." << endl;
+    } else {
+        cout << "121 is not a palindrome." << endl;
+    }
+    return 0;
 }
