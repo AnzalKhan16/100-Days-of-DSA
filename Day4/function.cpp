@@ -45,3 +45,18 @@ int main(){
     cout << "Largest of 10 and 20 is: " << largest(10, 20) << endl;
     return 0;
 }
+
+//function to check even number
+#include <iostream>
+using namespace std;
+bool isEven(int num) {
+    return num % 2 == 0;
+}
+int main(){
+    if (isEven(10)) {
+        cout << "10 is even." << endl;
+    } else {
+        cout << "10 is odd." << endl;
+    }
+    return 0;
+}
