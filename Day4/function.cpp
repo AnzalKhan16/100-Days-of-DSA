@@ -30,3 +30,18 @@ int main(){
     cout << "Square of 5 is: " << square(5) << endl;
     return 0;
 }
+
+//Function to find the largest of two numbers
+#include <iostream>
+using namespace std;
+int largest(int a, int b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+int main(){
+    cout << "Largest of 10 and 20 is: " << largest(10, 20) << endl;
+    return 0;
+}
