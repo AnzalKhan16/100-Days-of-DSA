@@ -19,3 +19,14 @@ int main(){
     cout<< add(10,20)<< endl;
     return 0;
 }
+
+//Function to find square of a number
+#include <iostream>
+using namespace std;
+int square(int num) {
+    return num * num;
+}
+int main(){
+    cout << "Square of 5 is: " << square(5) << endl;
+    return 0;
+}
