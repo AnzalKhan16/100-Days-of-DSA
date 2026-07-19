@@ -99,12 +99,34 @@ int main (){
      }
     int largest = arr[0];
     
-    for (int i=1;i<5;i++)
-      if(arr[i]) > largest {
+    for (int i=1;i<5;i++){
+      if(arr[i] > largest) {
         largest = arr[i]
       }
-
+    }
     cout << "Largest = " << largest;
+    return 0;
+}
+
+
+//Smallest element
+#include<iostream>
+using namespace std;
+int main (){
+
+    int arr[5];
+    cout << "Enter 5 numbers:\n";
+     for (int i=0;i<5;i++){
+    cin >> arr[i];
+     }
+    int smallest = arr[0];
+    
+    for (int i=1;i<5;i++){
+      if(arr[i] < smallest) {
+        smallest = arr[i]
+      }
+    }
+    cout << "smallest = " << smallest;
     return 0;
 }
 
